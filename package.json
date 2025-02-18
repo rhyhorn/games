@@ -1,0 +1,35 @@
+{
+  "name": "excalibur-webpack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a webpack starter for excaliburjs projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build:prod && ex-test -d ./dist -t ./test/test.js",
+    "webpack": "webpack",
+    "dev": "webpack serve --config webpack.development.js",
+    "start-card_game": "webpack serve --config webpack.development.js --env project=card_game",
+    "build:dev": "webpack --config webpack.development.js",
+    "build:prod": "webpack --config webpack.production.js  --env project=card_game"
+  },
+  "author": "Excalibur.js Team",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "@excaliburjs/testing": "0.26.0",
+    "clean-webpack-plugin": "4.0.0",
+    "compression-webpack-plugin": "11.1.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "5.6.3",
+    "source-map-loader": "5.0.0",
+    "terser-webpack-plugin": "5.3.10",
+    "ts-loader": "9.5.1",
+    "typescript": "5.6.3",
+    "webpack": "5.95.0",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "5.1.0",
+    "webpack-merge": "5.10.0"
+  },
+  "dependencies": {
+    "excalibur": "0.29.3"
+  }
+}
