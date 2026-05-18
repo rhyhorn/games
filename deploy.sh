@@ -6,7 +6,7 @@ set -e
 rm -rf dist/*
 cp -a public/. dist/
 
-npm run build:prod
+npm run build:card_game
 cd dist
 
 git init

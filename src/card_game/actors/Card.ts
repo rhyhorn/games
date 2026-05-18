@@ -1,4 +1,4 @@
-import { Actor, Engine, Input, SpriteSheet, vec } from 'excalibur';
+import { Actor, Engine, SpriteSheet, vec } from 'excalibur';
 import { resources } from '../resources';
 import Deck from './Deck';
 

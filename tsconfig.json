@@ -9,7 +9,7 @@
     "outDir": "./dist/",
     "paths": {
       "@/*": [
-        "./src/vampire/*"
+        "./src/isaac/*"
       ],
     }
   }

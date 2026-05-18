@@ -5,12 +5,14 @@
   "description": "a webpack starter for excaliburjs projects",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build:prod && ex-test -d ./dist -t ./test/test.js",
     "webpack": "webpack",
     "dev": "webpack serve --config webpack.development.js",
-    "start-card_game": "webpack serve --config webpack.development.js --env project=card_game",
-    "build:dev": "webpack --config webpack.development.js",
-    "build:prod": "webpack --config webpack.production.js  --env project=card_game"
+    "start:card_game": "webpack serve --config webpack.development.js --env project=card_game",
+    "build:card_game": "webpack --config webpack.production.js  --env project=card_game",
+    "start:move_it": "webpack serve --config webpack.development.js --env project=move_it",
+    "build:move_it": "webpack --config webpack.production.js  --env project=move_it",
+    "start:isaac": "webpack serve --config webpack.development.js --env project=isaac",
+    "build:isaac": "webpack --config webpack.production.js  --env project=isaac"
   },
   "author": "Excalibur.js Team",
   "license": "BSD-2-Clause",
@@ -30,6 +32,6 @@
     "webpack-merge": "5.10.0"
   },
   "dependencies": {
-    "excalibur": "0.29.3"
+    "excalibur": "^0.30.0"
   }
 }
